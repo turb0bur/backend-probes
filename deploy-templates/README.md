@@ -1,6 +1,6 @@
 # backend-probes
 
-![Version: 0.2.0](https://img.shields.io/badge/Version-0.2.0-informational?style=flat-square) ![Type: application](https://img.shields.io/badge/Type-application-informational?style=flat-square) ![AppVersion: 0.2.0](https://img.shields.io/badge/AppVersion-0.2.0-informational?style=flat-square)
+![Version: 0.2.1](https://img.shields.io/badge/Version-0.2.1-informational?style=flat-square) ![Type: application](https://img.shields.io/badge/Type-application-informational?style=flat-square) ![AppVersion: 0.2.0](https://img.shields.io/badge/AppVersion-0.2.0-informational?style=flat-square)
 
 A Helm chart for Kubernetes
 
@@ -40,7 +40,7 @@ A Helm chart for Kubernetes
 | ingress.tls | list | `[]` |  |
 | livenessProbe.failureThreshold | int | `3` |  |
 | livenessProbe.httpGet.path | string | `"/api/liveness"` |  |
-| livenessProbe.httpGet.port | int | `80` |  |
+| livenessProbe.httpGet.port | int | `8080` |  |
 | livenessProbe.initialDelaySeconds | int | `15` |  |
 | livenessProbe.periodSeconds | int | `5` |  |
 | nameOverride | string | `""` |  |
@@ -50,7 +50,7 @@ A Helm chart for Kubernetes
 | podSecurityContext | object | `{}` |  |
 | readinessProbe.failureThreshold | int | `3` |  |
 | readinessProbe.httpGet.path | string | `"/api/readiness"` |  |
-| readinessProbe.httpGet.port | int | `80` |  |
+| readinessProbe.httpGet.port | int | `8080` |  |
 | readinessProbe.initialDelaySeconds | int | `15` |  |
 | readinessProbe.periodSeconds | int | `5` |  |
 | replicaCount | int | `1` |  |
