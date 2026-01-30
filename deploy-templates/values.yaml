@@ -76,11 +76,11 @@ resources: {}
 
 livenessProbe:
   httpGet:
-    path: /api/liveness   # The URL endpoint used to check the "liveness" of the container.
+    path: /api/liveness  # The URL endpoint used to check the "liveness" of the container.
     port: 80
-  initialDelaySeconds: 15 # Delay (in seconds) before the first check after container start.
-  periodSeconds: 5        # Time interval (in seconds) between successive checks.
-  failureThreshold: 3     # Consecutive failures before the container is deemed unhealthy.
+  initialDelaySeconds: 15  # Delay (in seconds) before the first check after container start.
+  periodSeconds: 5  # Time interval (in seconds) between successive checks.
+  failureThreshold: 3  # Consecutive failures before the container is deemed unhealthy.
 
 readinessProbe:
   httpGet:
